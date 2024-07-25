@@ -35,7 +35,7 @@ Animações -> framer-motion;
 ## GitHub
 
 Para mais projetos e exemplos de código, visite meu perfil no GitHub: [iagooteles](https://github.com/iagooteles)
-Projeto: 
+Site: https://iagoteles-portfolio.vercel.app/
 Contatos: https://www.linkedin.com/in/iagooteles/
 
 ## Próximos passos
