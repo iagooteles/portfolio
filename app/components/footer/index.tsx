@@ -1,6 +1,11 @@
-import { contacts } from "./../../utils/contacts";
+import { footerSocialsInfo } from "@/app/types/page-info";
+import { CMSIcon } from "../cms-icon";
 
-export const Footer = () => {
+type FooterSectionSocialsProps = {
+  footerSocials: footerSocialsInfo;
+};
+
+export const Footer = ({ footerSocials }: FooterSectionSocialsProps) => {
   const getDate = () => {
     const year = new Date().getFullYear();
     return year;
@@ -13,14 +18,14 @@ export const Footer = () => {
       </span>
 
       <div className="text-gray-300 text-4xl flex items-center h-20 gap-3">
-        {contacts.map((contact, index) => (
+        {footerSocials.socials.map((contact, index) => (
           <a
             href={contact.url}
             key={`contact.${index}`}
             target="_blank"
             className="hover:text-gray-100 hover:scale-110 transition-all"
           >
-            {contact.icon}
+            <CMSIcon icon={contact.iconSvg} />
           </a>
         ))}
       </div>

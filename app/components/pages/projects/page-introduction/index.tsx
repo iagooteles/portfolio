@@ -1,7 +1,10 @@
+'use client'
+
 import { HiArrowNarrowLeft } from "react-icons/hi";
 import { Link } from "../../../link";
 import { SectionTitle } from "../../../section-title";
 import { FaHeart } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export const PageIntroduction = () => {
   return (
@@ -14,7 +17,13 @@ export const PageIntroduction = () => {
           className="text-center items-center [&>h3]:text-4xl"
         />
 
-        <div className="flex flex-col items-center">
+        <motion.div 
+          className="flex flex-col items-center"
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          exit={{opacity:0, y: 100}}
+          transition={{ duration: 0.5 }}
+        >
           <p className="flex text-gray-400 text-center max-w-[640px] my-6 text-sm sm:text-base">
             Veja alguns dos projetos que já criei &nbsp;&nbsp; <FaHeart />{" "}
             &nbsp; .
@@ -24,7 +33,7 @@ export const PageIntroduction = () => {
             <HiArrowNarrowLeft size={30} />
             Voltar para Home
           </Link>
-        </div>
+        </motion.div>
 
         
       </section>

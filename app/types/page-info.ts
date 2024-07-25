@@ -20,6 +20,10 @@ export type HomePageInfo = {
     highlightProjects: Project[]
 }
 
+export type footerSocialsInfo = {
+    socials: Social[]
+}
+
 export type ProjectPageData = {
     project: Project;
 }
@@ -37,4 +41,8 @@ export type ProjectsPageStaticData = {
 export type HomePageData = {
     page: HomePageInfo;
     workExperiences: WorkExperience[];
+}
+
+export type FooterPageSocialsData = {
+    page: footerSocialsInfo;
 }

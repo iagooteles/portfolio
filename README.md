@@ -15,6 +15,8 @@ Além de programação, também tenho gosto pela área de dados, dominando skill
 
 Este portfólio foi criado usando Next e React, com estilização feita majoritariamente pelo Tailwind. Com o propósito de mostrar meus projetos, seja como desenvolvedor ou seja como Analista de dados.
 CMS para gerenciamento do conteúdo -> Hygraph;
+Formulário de contato -> Discord Webhook, preenchido o formulário, a mensagem com nome e email vai direto para meu canal do discord, para que eu possa entrar em contato posteriormente, se for o caso;
+Animações -> framer-motion;
 
 ## Habilidades
 
@@ -28,9 +30,10 @@ CMS para gerenciamento do conteúdo -> Hygraph;
 - React
 - JavaScript
 - Tailwind CSS
-- Hygraph
+- Hygraph => https://hygraph.com/
 
 ## GitHub
 
 Para mais projetos e exemplos de código, visite meu perfil no GitHub: [iagooteles](https://github.com/iagooteles)
+Projeto: 
 Contatos: https://www.linkedin.com/in/iagooteles/
