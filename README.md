@@ -37,3 +37,8 @@ Animações -> framer-motion;
 Para mais projetos e exemplos de código, visite meu perfil no GitHub: [iagooteles](https://github.com/iagooteles)
 Projeto: 
 Contatos: https://www.linkedin.com/in/iagooteles/
+
+## Próximos passos
+- Otimizar página de error 404;
+- Colocar novos projetos;
+- Separar projetos por projetos de Data Science e programação;
