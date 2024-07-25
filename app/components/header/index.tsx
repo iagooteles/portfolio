@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { NavItem } from "./nav-item";
 import { motion } from "framer-motion";
+import { FaCode } from "react-icons/fa";
 
 const NAV_ITEMS = [
   {
@@ -25,12 +25,12 @@ export const Header = () => {
         transition={{duration: 0.5}}
     >
       <div className="container flex items-center justify-between">
-        <Link href="/">
-          <Image
-            width={58}
-            height={49}
-            src="/images/logo4.svg"
-            alt="Logo Iago"
+        <Link 
+          href="/"
+          className="border border-purple-800 rounded p-1"
+        >
+          <FaCode  
+            size={26}
           />
         </Link>
 
