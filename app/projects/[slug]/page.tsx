@@ -41,7 +41,7 @@ const getProjectDetails = async (slug: string): Promise<ProjectPageData> => {
   }
   `;
 
-  return fetchHygraphQuery(query);
+  return fetchHygraphQuery(query, 10);
 };
 
 export default async function Project({ params: { slug } }: ProjectProps) {
@@ -62,19 +62,18 @@ export async function generateStaticParams() {
         slug
       }
     }
-  `
-
+  `;
   const { projects } = await fetchHygraphQuery<ProjectsPageStaticData>(query);
 
   return projects;
 }
 
 export async function generateMetadata({
-  params: { slug }
+  params: { slug },
 }: ProjectProps): Promise<Metadata> {
   const data = await getProjectDetails(slug);
   const project = data.project;
-  
+
   return {
     title: project.title,
     description: project.description.text,
@@ -83,9 +82,9 @@ export async function generateMetadata({
         {
           url: project.thumbnail.url,
           width: 1200,
-          height: 630
-        }
-      ]
-    }
-  }
+          height: 630,
+        },
+      ],
+    },
+  };
 }
