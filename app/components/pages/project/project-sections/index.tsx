@@ -12,9 +12,9 @@ type ProjectsectionsProps = {
 export const ProjectSections = ({ projectSection }: ProjectsectionsProps) => {
   return (
     <section className="container my-12 md:my-32 flex flex-col gap-8 md:gap-32">
-      {projectSection.map((section) => (
+      {projectSection.map((section, i) => (
         <motion.div
-          key={section.title}
+          key={`${section.title} - ${i}`}
           className="flex flex-col items-center gap-6 md:gap-12"
           {...fadeUpAnimation}
           transition={{ duration: 0.5 }}
