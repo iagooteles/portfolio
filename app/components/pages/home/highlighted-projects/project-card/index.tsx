@@ -19,6 +19,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
     whileInView: { opacity: 1, x: 0 },
     exit: { opacity: 0, x: -100 },
   };
+
   return (
     <motion.div 
         className="flex gap-6 lg:gap-12 flex-col lg:flex-row"
@@ -39,7 +40,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           height={304}
           src={project.thumbnail.url}
           alt={`Thumbnail do projeto ${project.title}`}
-          className="w-full h-full object-cover rounded-lg opacity-80 brightness-120"
+          className="w-full h-full object-contain rounded-lg opacity-80 brightness-120"
         />
       </motion.div>
 
