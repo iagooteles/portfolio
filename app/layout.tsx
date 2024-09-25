@@ -44,7 +44,7 @@ const getFooterSocialsData = async (): Promise<FooterPageSocialsData> => {
     }
 `;
 
-  return fetchHygraphQuery(query, 60 * 60 * 24);
+  return fetchHygraphQuery(query);
 };
 
 export default async function RootLayout({ children }: { children: ReactNode }) {
