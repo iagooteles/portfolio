@@ -11,8 +11,8 @@ export const fetchHygraphQuery = async<T> (
         },
         body: JSON.stringify({ query }),
         next: {
-            // revalidate: 60 * 60 * 24 * 3 // 3 dias
-            revalidate: 60
+            revalidate: 60 * 60 * 24  // 1 dia
+            // revalidate: 15
         }
     })
 
