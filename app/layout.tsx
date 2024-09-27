@@ -1,12 +1,12 @@
 import { Inter, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import { Header } from "./components/header";
 import { ContactForm } from "./components/contact-form";
 import { Footer } from "./components/footer";
 import { BackToTop } from "./components/back-to-top";
 import { Toaster } from "./components/toaster";
-import { FooterPageSocialsData } from "./types/page-info";
+import type { FooterPageSocialsData } from "./types/page-info";
 import { fetchHygraphQuery } from "./utils/fetch-hygraph-query";
 
 export const metadata = {
