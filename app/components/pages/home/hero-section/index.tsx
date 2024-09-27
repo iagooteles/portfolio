@@ -48,16 +48,17 @@ export const HeroSection = ({ homeInfo }: HomeSectionProps) => {
             ))}
           </div>
 
-          <div className="w-max mt-6 lg:mt-10 flex sm:items-center gap-4 sm:gap-5 sm:flex-row">
+          <div className="w-max mt-6 lg:mt-10 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-5">
             <Button onClick={handleContact}>Envie uma mensagem</Button>
 
-            <div className="text-gray-300 text-4xl flex items-center h-14 gap-3">
+            <div className="text-gray-300 text-4xl flex items-center h-14 gap-3 mt-4 sm:mt-0">
               {homeInfo.socials.map((contact, index) => (
                 <a
                   href={contact.url}
                   key={`contact.${index}`}
                   target="_blank"
-                  className="hover:text-gray-100 hover:scale-110 transition-all"
+                  className="hover:text-gray-100 hover:scale-110 transition-all" 
+                  rel="noreferrer"
                 >
                   <CMSIcon icon={contact.iconSvg} />
                 </a>

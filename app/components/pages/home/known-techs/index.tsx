@@ -14,7 +14,7 @@ export const KnownTechs = ({ techs }: KnownTechsProps) => {
     <section className="container py-16">
       <SectionTitle subtitle="competências" title="Conhecimentos" />
 
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-4 mt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-4 mt-6">
         {techs?.map((tech, i) => (
             <motion.div
                 key={tech.name}
