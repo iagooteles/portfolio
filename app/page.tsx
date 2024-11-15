@@ -6,8 +6,8 @@ import { HomePageData } from "./types/page-info";
 import { fetchHygraphQuery } from "./utils/fetch-hygraph-query";
 
 export const metadata = {
-  title: 'Home | Iago Teles'
-}
+  title: "Home | Iago Teles",
+};
 
 const getPageData = async (): Promise<HomePageData> => {
   const query = `
@@ -16,7 +16,7 @@ const getPageData = async (): Promise<HomePageData> => {
         introduction {
           raw
         }
-        technologies {
+        technologies (first:15) {
           name
         }
         profilePicture {
@@ -26,7 +26,7 @@ const getPageData = async (): Promise<HomePageData> => {
           url
           iconSvg
         }
-        knownTechs {
+        knownTechs (first:12) {
           iconSvg
           name
           startDate
@@ -67,8 +67,6 @@ const getPageData = async (): Promise<HomePageData> => {
 
 export default async function Home() {
   const { page: pageData, workExperiences } = await getPageData();
-
-  console.log(pageData);
 
   return (
     <>
