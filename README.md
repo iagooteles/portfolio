@@ -2,9 +2,9 @@
 
 ## Introdução
 
-Trabalhei como Desenvolvedor Frontend na OSF Digital, participando ativamente de diversos projetos envolvendo equipes multiculturais. Atualmente, estou cursando Sistemas de Informação na Estácio, com foco em desenvolvimento Full Stack e domínio em JavaScript e Python.
+Programador apaixonado por tecnologia, sempre buscando inovar e criar soluções que impactem positivamente os negócios e a experiência dos usuários. Com uma sólida formação em JavaScript, Java e Python, tenho experiência tanto no desenvolvimento front-end quanto no back-end, o que me permite entender e contribuir de forma integral em projetos variados.
 
-Além de programação, também tenho gosto pela área de dados, dominando skills de Data Science para análise, limpeza e criação de dados.
+Trabalhei como Desenvolvedor Frontend na OSF digital, participando ativamente de diversos projetos envolvendo equipes multiculturais. 
 
 ## Idiomas
 
