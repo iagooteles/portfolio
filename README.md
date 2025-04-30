@@ -39,6 +39,7 @@ Site: https://iagoteles-portfolio.vercel.app/
 Contatos: https://www.linkedin.com/in/iagooteles/
 
 ## Próximos passos
+
 - Otimizar página de error 404;
 - Colocar novos projetos;
 - Separar projetos por projetos de Data Science e programação;
